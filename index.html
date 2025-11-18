@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do-Something</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="section">
+        <button id="show-btn">Show Registration</button>
+        <dialog >
+            <form method="dialog">
+                <div>
+                    <h1>Registration Form</h1>
+                </div>
+                <div class="name-email">
+                    <input type="text" placeholder="enter your name">
+                </div>
+                <div class="name-email">
+                    <input type="email" placeholder="enter your email">
+                </div>
+
+                <div class="sel-course">
+                    <label for="">Select Course</label>
+                    <select>
+                        <option value="">Java</option>
+                        <option value="">Python</option>
+                        <option value="">C++</option>
+                    </select>
+                </div>
+                <div class="sel-skills">
+                    <label for="">Select Skills</label>
+                    <span>
+                        <input type="checkbox" id="html">
+                        <label for="html">Html</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="css">
+                        <label for="css">Css</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="java">
+                        <label for="java">java</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="spring">
+                        <label for="spring">Spring</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="python">
+                        <label for="python">Python</label>
+                    </span>
+                </div>
+                <div class="message">
+                    <label for="">Write about yourself</label>
+                    <textarea rows="4"></textarea>
+                </div>
+                <div class="sub-btn">
+                    <button>Submit</button>
+                </div>
+
+            </form>
+        </dialog>
+    </section>
+
+    <script>
+        const showBtn = document.getElementById("show-btn")
+        const dialog = document.querySelector("dialog");
+        showBtn.addEventListener('click', () => {
+            dialog.showModal()
+        })
+
+    </script>
+</body>
+
+</html>
